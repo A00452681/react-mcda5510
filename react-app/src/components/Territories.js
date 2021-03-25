@@ -5,7 +5,7 @@ const Territories = () => (
     <div>
         {territories.map(territory => {
             return (
-                <Province name={territory.name} capital={territory.capital} flagUrl={territory.flagUrl} />
+                <Province key={territory.name} name={territory.name} capital={territory.capital} flagUrl={territory.flagUrl} />
             )
         }
         )}

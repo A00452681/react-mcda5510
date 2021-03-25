@@ -10,7 +10,7 @@ class Province extends Component {
 
     render() {
         return (
-            <div className="province-container">
+            <div className="province-container" key={this.props.name}>
                 <img alt={`${this.props.name}'s Flag`} width={125} src={this.props.flagUrl} />
                 <div>
                     <h3>{this.props.name}</h3>

@@ -8,7 +8,7 @@ class Provinces extends Component {
         return (
             <div>
                 {provinces.map(province => {
-                    return <Province name={province.name} capital={province.capital} flagUrl={province.flagUrl} />
+                    return <Province key={province.name} name={province.name} capital={province.capital} flagUrl={province.flagUrl} />
                 })}
             </div>
         )
