@@ -1,8 +1,6 @@
 import React, { Component } from "react"
 import Province from "./Province"
 
-import './styles.css';
-
 import provinces from '../data/provinces-data'
 
 class Provinces extends Component {
