@@ -15,9 +15,11 @@ class Province extends Component {
                 <img alt={`${this.props.name}'s Flag`} width={125} src={this.props.flagUrl} />
                 <div>
                     <h3>{this.props.name}</h3>
-                    {this.state.isShowCapital ? <p>Halifax</p> : undefined}
+                    {this.state.isShowCapital ? <p>{this.props.capital}</p> : undefined}
                 </div>
-                <button onClick={() => this.setState({ isShowCapital: !this.state.isShowCapital })}>Show Capital</button>
+                <button onClick={() => this.setState({ isShowCapital: !this.state.isShowCapital })}>
+                    {this.state.isShowCapital ? "Hide Capital" : "Show Capital"}
+                </button>
             </div>
         )
     }
