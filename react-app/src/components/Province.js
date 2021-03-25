@@ -17,7 +17,10 @@ class Province extends Component {
                     <h3>{this.props.name}</h3>
                     {this.state.isShowCapital ? <p>{this.props.capital}</p> : undefined}
                 </div>
-                <button onClick={() => this.setState({ isShowCapital: !this.state.isShowCapital })}>
+                <button
+                    onClick={() => this.setState({ isShowCapital: !this.state.isShowCapital })}
+                    className={this.state.isShowCapital ? "btn-capital-hide" : "btn-capital-show"}
+                >
                     {this.state.isShowCapital ? "Hide Capital" : "Show Capital"}
                 </button>
             </div>
