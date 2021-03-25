@@ -4,6 +4,7 @@ import Provinces from './components/Provinces';
 import Territories from './components/Territories';
 
 import './App.css';
+import Covid19 from "./components/Covid19";
 
 class App extends Component {
   constructor(props) {
@@ -22,12 +23,16 @@ class App extends Component {
         <div className="menu">
           <p className="menu-item" onClick={() => this.setState({ selectedMenu: 'p' })}>Provinces</p>
           <p className="menu-item" onClick={() => this.setState({ selectedMenu: 't' })}>Territories</p>
+          <p className="menu-item" onClick={() => this.setState({ selectedMenu: 'c' })}>Covid-19</p>
         </div>
 
         {this.state.selectedMenu === 'p' ?
           <Provinces />
           :
-          <Territories />
+          this.state.selectedMenu === 't' ?
+            <Territories />
+            :
+            <Covid19 />
         }
       </div>
     );
