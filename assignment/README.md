@@ -1,6 +1,8 @@
 # Assignment 
 
-I tried to make the assignment as fun and beneficial as possible... 😅 You will create a mini personal web app, talking about yourself and your town.
+I tried to make the assignment as fun and beneficial as possible... 😅 
+
+You will create a mini personal web app, talking about yourself and your town.
 
 ## Requirements
 A React app with **two** views (or pages). You can create it by running the `create-react-app` command, or by using the built-in react project in Visual Studio.
