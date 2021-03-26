@@ -4,8 +4,6 @@ import Provinces from './components/Provinces'
 import Territories from './components/Territories'
 import Covid19 from "./components/Covid19"
 
-import LikeButton from './components/advanced/LikeButtonHook'
-
 import './App.css';
 
 
@@ -20,8 +18,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <LikeButton />
         <h1>Hello World</h1>
         <img alt="Canada's Flag" width={125} src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" />
 
