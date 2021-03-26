@@ -39,3 +39,9 @@ Formula (from Celsius to Fahrenheit, where T is the temprature in Celsius):
 
 (T . 9/5) + 32 
 ```
+
+## Design Inspiration
+![screenshot 1](screenshot-1.png)
+![screenshot 2](screenshot-2.png)
+![screenshot 3](screenshot-3.png)
+![screenshot 4](screenshot-4.png)
