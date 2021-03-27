@@ -10,7 +10,19 @@
   grid-template-columns: 2fr 4fr 1fr;
 }
 
-.btn-capital {
+.btn-capital-hide {
+  background-color: #777;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: min-content;
+}
+
+.btn-capital-show {
   background-color: #2947B6;
   border: none;
   color: white;
