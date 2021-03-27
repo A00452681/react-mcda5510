@@ -11,26 +11,29 @@ class Covid19 extends Component {
             changeCases: '',
             changeDeaths: ''
         }
-    }
-    render() {
-        const fetchData = () => {
-            fetch("https://api.covid19tracker.ca/summary")
-                .then(response => {
-                    return response.json()
-                })
-                .then(response => {
-                    // console.log(response);
-                    this.setState({
-                        lastestDate: response.data[0].latest_date,
-                        totalCases: response.data[0].total_cases,
-                        totalDeaths: response.data[0].total_fatalities,
-                        totalVaccinated: response.data[0].total_vaccinated,
-                        changeCases: response.data[0].change_cases,
-                        changeDeaths: response.data[0].change_fatalities
-                    })
-                });
-        }
 
+        this.fetchData = this.fetchData.bind(this)
+    }
+
+    fetchData() {
+        fetch("https://api.covid19tracker.ca/summary")
+            .then(response => {
+                return response.json()
+            })
+            .then(response => {
+                // console.log(response);
+                this.setState({
+                    lastestDate: response.data[0].latest_date,
+                    totalCases: response.data[0].total_cases,
+                    totalDeaths: response.data[0].total_fatalities,
+                    totalVaccinated: response.data[0].total_vaccinated,
+                    changeCases: response.data[0].change_cases,
+                    changeDeaths: response.data[0].change_fatalities
+                })
+            });
+    }
+
+    render() {
         return (
             <div className="covid19-container">
 
@@ -40,7 +43,7 @@ class Covid19 extends Component {
                 <p><b>Total Vaccinated: </b>{this.state.totalVaccinated}</p>
                 <p><b>Change Cases: </b>{this.state.changeCases}</p>
                 <p><b>Change Deaths: </b>{this.state.changeDeaths}</p>
-                <button onClick={() => fetchData()}>Fetch Data</button>
+                <button onClick={this.fetchData}>Fetch Data</button>
 
             </div>
         )
