@@ -56,4 +56,5 @@ export default Covid19;
 /**
  * Topics you might also like:
  *      - JS Promises -> https://www.w3schools.com/js/js_promise.asp
+ *      - Components Lifecycle -> https://reactjs.org/docs/react-component.html#the-component-lifecycle
  */
