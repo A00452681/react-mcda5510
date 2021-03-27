@@ -13,3 +13,8 @@ const Territories = () => (
 )
 
 export default Territories;
+
+/**
+ * Topics you might also like:
+ *      - Functional vs Class Components -> https://programmingwithmosh.com/react/react-functional-components/
+ */
