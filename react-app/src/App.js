@@ -4,7 +4,8 @@ import Provinces from './components/Provinces'
 import Territories from './components/Territories'
 import Covid19 from "./components/Covid19"
 
-import LikeButton from './components/advanced/LikeButtonHook'
+import LikeButton from './components/advanced/LikeButton'
+// import LikeButton from './components/advanced/LikeButtonHook'
 
 import './App.css';
 
