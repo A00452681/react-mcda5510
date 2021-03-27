@@ -1,14 +1,12 @@
 import React, { Component } from "react"
-import './styles.css';
 
 class Province extends Component {
-
     render() {
         return (
             <div className="province-container">
                 <img alt={`${this.props.name}'s Flag`} width={125} src={this.props.flagUrl} />
                 <h3>{this.props.name}</h3>
-                <button>Show Capital</button>
+                <button className="btn-capital">Show Capital</button>
             </div>
         )
     }
