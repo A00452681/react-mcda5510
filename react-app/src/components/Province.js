@@ -35,4 +35,5 @@ export default Province;
  *      - Template Literals -> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
  *      - Rendering Elements -> https://reactjs.org/docs/rendering-elements.html
  *      - Handling events -> https://reactjs.org/docs/handling-events.html
+ *      - Arrow Functions -> https://www.w3schools.com/js/js_arrow_function.asp
  */
