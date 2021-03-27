@@ -52,3 +52,8 @@ class Covid19 extends Component {
 }
 
 export default Covid19;
+
+/**
+ * Topics you might also like:
+ *      - JS Promises -> https://www.w3schools.com/js/js_promise.asp
+ */
