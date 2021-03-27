@@ -16,3 +16,8 @@ class Provinces extends Component {
 }
 
 export default Provinces;
+
+/**
+ * Topics you might also like:
+ *      - Array.map() -> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+ */
