@@ -40,6 +40,16 @@ Formula (from Celsius to Fahrenheit, where T is the temprature in Celsius):
 (T . 9/5) + 32 
 ```
 
+## Rubric 
+Total Mark: 10 pts
+- 1st View: "About me"  (1 pt)
+- 2nd View: "My Town" (2 pts)
+- Navigation (2 pts)
+- Current Weather: Populating the data correctly (3 pts)
+- Current Weather: Conditional rendering the weather image (2 pts)
+
+- Bonus (+1 pt)
+
 ## Design Inspiration
 ![screenshot 1](screenshot-1.png)
 ![screenshot 2](screenshot-2.png)

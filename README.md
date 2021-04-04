@@ -15,3 +15,5 @@ This repo is intended to complement the React Lecture given for the Software Dev
 - React Hooks (`08-react-hooks`)
 - Routing
 
+## Contact me
+simon@simonachkar.com
