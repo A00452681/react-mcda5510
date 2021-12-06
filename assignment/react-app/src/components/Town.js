@@ -19,7 +19,7 @@ class Town extends Component{
        
     }
     fetchData(){
-        fetch("https://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=eb1db9c9cbb543967dcc31ad023abdca").then(response => {
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Halifax&units=metric&appid=eb1db9c9cbb543967dcc31ad023abdca").then(response => {
             return response.json()
         })
         .then(response => {
@@ -45,7 +45,7 @@ class Town extends Component{
                     <a href="#" onClick={() => this.click()}>  My Town </a>  
                     {this.state.isShowCity ? <img alt={this.props.name} width={400} src={this.props.flagUrl}/> : undefined}
                     {this.state.isShowCity ? <h2>{this.props.name}</h2> : undefined}
-                    {this.state.isShowCity ? <img alt={this.props.name} width={75} src={this.props.weatherUrl}/> : undefined}
+                    {this.state.isShowCity ? <p>{this.state.temperature > 20 ? <img alt='Sunny Weather.jpg' width={100} src = "https://raw.githubusercontent.com/simonachkar/react-mcda5510/main/assignment/assets/sunny.png" /> : this.state.temperature < 10 ? <img alt='Cold Weather.jpg' width={100} src = "https://raw.githubusercontent.com/simonachkar/react-mcda5510/main/assignment/assets/cold.png" /> : <img alt='Mild Weather.jpg' width={100} src = "https://raw.githubusercontent.com/simonachkar/react-mcda5510/main/assignment/assets/mild.png" />}</p>: undefined}
                     {this.state.isShowCity ? <p>{`${this.state.temperature} °C`}</p> : undefined}
                     {this.state.isShowCity ? <button onClick={() => this.convertTemp(this.state.temperature)}> Change to °F </button> : undefined}
                     {/* <button className={this.state.isShowCity ? 'btn-capital-hide' : 'btn-capital-show'} 
