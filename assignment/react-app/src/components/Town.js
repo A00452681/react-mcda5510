@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import weather from '../data/Weather-data'
+import ChangeButton from "./Advanced/ChangeButtonHooks";
 
 class Town extends Component{
     constructor(props){
@@ -9,7 +10,7 @@ class Town extends Component{
         this.state = {
             isShowCity: false,
             temperature: '',
-            weatherImg: ''
+            weatherImg: '',
         }
         this.fetchData = this.fetchData.bind(this)
     }
@@ -34,9 +35,7 @@ class Town extends Component{
         this.fetchData()
     }
 
-    convertTemp(){
-
-    }
+      
     render(){
         console.log(this.state)
         return(
@@ -47,9 +46,8 @@ class Town extends Component{
                     {this.state.isShowCity ? <h2>{this.props.name}</h2> : undefined}
                     {this.state.isShowCity ? <p>{this.state.temperature > 20 ? <img alt='Sunny Weather.jpg' width={100} src = "https://raw.githubusercontent.com/simonachkar/react-mcda5510/main/assignment/assets/sunny.png" /> : this.state.temperature < 10 ? <img alt='Cold Weather.jpg' width={100} src = "https://raw.githubusercontent.com/simonachkar/react-mcda5510/main/assignment/assets/cold.png" /> : <img alt='Mild Weather.jpg' width={100} src = "https://raw.githubusercontent.com/simonachkar/react-mcda5510/main/assignment/assets/mild.png" />}</p>: undefined}
                     {this.state.isShowCity ? <p>{`${this.state.temperature} °C`}</p> : undefined}
-                    {this.state.isShowCity ? <button onClick={() => this.convertTemp(this.state.temperature)}> Change to °F </button> : undefined}
-                    {/* <button className={this.state.isShowCity ? 'btn-capital-hide' : 'btn-capital-show'} 
-                    onClick={() => this.click()}>{this.state.isShowCity ? "Hide Town" : "Show Town"} </button> */}
+                    {this.state.isShowCity ? <p><ChangeButton /></p> : undefined}
+                   
                 </div>
                
             </div>
