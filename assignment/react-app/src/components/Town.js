@@ -10,7 +10,6 @@ class Town extends Component{
         this.state = {
             isShowCity: false,
             temperature: '',
-            weatherImg: '',
         }
         this.fetchData = this.fetchData.bind(this)
     }
